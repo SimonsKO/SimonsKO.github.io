@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Charlie's Site
 
-You can use the [editor on GitHub](https://github.com/SimonsKO/SimonsKO.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+I will list resources and projects that I have created here, as soon as I figure out how to add a redirect button.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
