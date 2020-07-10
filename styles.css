@@ -1,0 +1,245 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.clockname {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10rem;
+    font-style: italic;
+    text-shadow: red 2px 5px;
+    -webkit-user-select: none;
+}
+
+.trademark {
+    left: 90px;
+    font-size: 5rem;
+    font-style: italic;
+    text-shadow: red 2px 5px;
+    -webkit-user-select: none;
+}
+
+.myname {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    position: relative;
+    top: 100px;
+    right: 300px;
+    text-shadow: white 2px 2px;
+    -webkit-user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(-85deg, #3f0000, #0004ff, #00ff4c, #f10505);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    font-size: 3rem;
+    text-emphasis-color: blue;
+    text-shadow: white 2px 2px;
+    font-family: Impact, Times, serif;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(17, 15, 15, 0.8);
+    border-radius: 50%;
+    border: 5px solid gray;
+    border-width: 10px;
+    position: relative;
+}
+
+.clock .lines {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: .5rem;
+    -webkit-user-select: none;
+}
+
+.clock .lines1 {
+    --rotation: 30deg;
+}
+
+.clock .lines2 {
+    --rotation: 60deg;
+}
+
+.clock .lines3 {
+    --rotation: 90deg;
+}
+
+.clock .lines4 {
+    --rotation: 120deg;
+}
+
+.clock .lines5 {
+    --rotation: 150deg;
+}
+
+.clock .lines6 {
+    --rotation: 180deg;
+}
+
+.clock .lines7 {
+    --rotation: 210deg;
+}
+
+.clock .lines8 {
+    --rotation: 240deg;
+}
+
+.clock .lines9 {
+    --rotation: 270deg;
+}
+
+.clock .lines10 {
+    --rotation: 300deg;
+}
+
+.clock .lines11 {
+    --rotation: 330deg;
+}
+
+.clock .lines12 {
+    --rotation: 360deg;
+}
+
+.clock .number {
+    color: white;
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.4rem;
+    -webkit-user-select: none;
+    font-family: sans-serif red;
+}
+
+.clock .number1 {
+    --rotation: 30deg;
+}
+
+.clock .number2 {
+    --rotation: 60deg;
+}
+
+.clock .number3 {
+    --rotation: 90deg;
+}
+
+.clock .number4 {
+    --rotation: 120deg;
+}
+
+.clock .number5 {
+    --rotation: 150deg;
+}
+
+.clock .number6 {
+    --rotation: 180deg;
+}
+
+.clock .number7 {
+    --rotation: 210deg;
+}
+
+.clock .number8 {
+    --rotation: 240deg;
+}
+
+.clock .number9 {
+    --rotation: 270deg;
+}
+
+.clock .number10 {
+    --rotation: 300deg;
+}
+
+.clock .number11 {
+    --rotation: 330deg;
+}
+
+.clock .number12 {
+    --rotation: 360deg;
+}
+
+.clock .hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background-color: black;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock .hand.second {
+    width: 6px;
+    height: 45%;
+    background-color: red;
+    border: blue;
+}
+
+.clock .hand.minute {
+    width: 9px;
+    height: 40%;
+    background-color: gray;
+    border: blue;
+}
+
+.clock .hand.hour {
+    width: 12px;
+    height: 25%;
+    background-color: gray;
+    border: blue;
+}
