@@ -32,7 +32,7 @@ if (isset($_POST['comment']))
 ?>
 <!DOCTYPE html>
 <html>
-<title> XSS Tutorial #3 </title>
+<title> XSS test site</title>
 <style>
 	#bord td
 	{
